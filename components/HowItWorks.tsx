@@ -3,27 +3,27 @@ import React from 'react';
 const steps = [
   {
     num: "01",
-    title: "Discovery & Map",
-    desc: "We map your camera layout, understand risk zones, and align on your security goals.",
-    sub: "Risk assessment • SOP definition"
+    title: "CCTV Monitoring",
+    desc: "We monitor your store cameras during operating hours—nothing manual, nothing estimated.",
+    sub: "Live EST Coverage"
   },
   {
     num: "02",
-    title: "Secure Integration",
-    desc: "Our team connects to your CCTV or VMS through secure channels without disrupting your setup.",
-    sub: "Read-only access • No hardware changes"
+    title: "Entry & Exit Logging",
+    desc: "We record exact entry and exit times for every employee to the minute.",
+    sub: "Precision Tracking"
   },
   {
     num: "03",
-    title: "Live Monitoring",
-    desc: "Trained operators monitor your feeds using detailed playbooks and escalation paths.",
-    sub: "Standard protocols • Incident tagging"
+    title: "Shift Verification",
+    desc: "Two operators cover the day with clean handovers to ensure no data is missed.",
+    sub: "Zero Data Gaps"
   },
   {
     num: "04",
-    title: "Report & Optimize",
-    desc: "You receive incident reports, summaries, and insights that help refine your security posture.",
-    sub: "Weekly reports • Incident archives"
+    title: "Report Delivery",
+    desc: "You receive a clean Excel/PDF report every week—calculated and ready for payment.",
+    sub: "Weekly Payroll Ready"
   }
 ];
 
@@ -32,7 +32,8 @@ const HowItWorks: React.FC = () => {
     <section id="how-it-works" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">How SafeLink BPO integrates with your cameras</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">How it works</h2>
+          <p className="text-slate-600 mt-4">From camera feed to payroll report in 4 simple steps.</p>
         </div>
 
         <div className="relative">
@@ -49,18 +50,12 @@ const HowItWorks: React.FC = () => {
                 <p className="text-slate-600 text-sm leading-relaxed mb-3 text-center lg:text-left">
                   {step.desc}
                 </p>
-                <p className="text-xs font-mono text-cyan-700 text-center lg:text-left">
+                <p className="text-xs font-bold text-cyan-700 text-center lg:text-left uppercase tracking-wide">
                   {step.sub}
                 </p>
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="mt-16 bg-slate-50 border border-slate-200 rounded-lg p-6 max-w-2xl mx-auto flex flex-wrap justify-center gap-6 text-sm text-slate-600">
-           <span className="flex items-center gap-2"><div className="w-2 h-2 bg-green-500 rounded-full"></div> Encrypted connections</span>
-           <span className="flex items-center gap-2"><div className="w-2 h-2 bg-green-500 rounded-full"></div> Restricted operator access</span>
-           <span className="flex items-center gap-2"><div className="w-2 h-2 bg-green-500 rounded-full"></div> NDAs & Strict confidentiality</span>
         </div>
       </div>
     </section>

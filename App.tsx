@@ -1,17 +1,17 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import SocialProof from './components/SocialProof';
-import MonitoringShowcase from './components/MonitoringShowcase';
+import Operations from './components/Operations';
 import Services from './components/Services';
-import Industries from './components/Industries';
+import SampleReport from './components/SampleReport';
 import HowItWorks from './components/HowItWorks';
-import Pricing from './components/Pricing';
+import TargetAudience from './components/TargetAudience';
 import WhySafeLink from './components/WhySafeLink';
 import About from './components/About';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import MonitoringShowcase from './components/MonitoringShowcase';
 
 const App: React.FC = () => {
   return (
@@ -19,12 +19,12 @@ const App: React.FC = () => {
       <Header />
       <main>
         <Hero />
-        <SocialProof />
-        <MonitoringShowcase />
-        <Services />
-        <Industries />
         <HowItWorks />
-        <Pricing />
+        <Operations />
+        <Services />
+        <SampleReport />
+        <TargetAudience />
+        <MonitoringShowcase />
         <WhySafeLink />
         <About />
         <FAQ />

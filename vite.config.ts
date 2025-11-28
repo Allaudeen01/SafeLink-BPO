@@ -2,10 +2,9 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 
-export default defineConfig(({ mode, command }) => {
+export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: command === 'serve' ? '/' : '/SafeLink-BPO/',
       server: {
         port: 3000,
         host: '0.0.0.0',
@@ -17,7 +16,7 @@ export default defineConfig(({ mode, command }) => {
       },
       resolve: {
         alias: {
-          '@': path.resolve(__dirname, 'src'),
+          '@': path.resolve(__dirname, '.'),
         }
       }
     };

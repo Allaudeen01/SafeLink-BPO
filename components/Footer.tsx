@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed">
-              Remote security camera monitoring, powered by human vigilance and advanced operational protocols.
+              Accurate employee hours from CCTV. Delivered weekly.
             </p>
           </div>
 
@@ -23,7 +23,6 @@ const Footer: React.FC = () => {
             <h4 className="text-slate-900 font-medium mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-slate-600">
               <li><a href="#about" className="hover:text-cyan-600 transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-cyan-600 transition-colors">Careers</a></li>
               <li><a href="#contact" className="hover:text-cyan-600 transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -31,9 +30,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-slate-900 font-medium mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li><a href="#services" className="hover:text-cyan-600 transition-colors">24/7 Monitoring</a></li>
-              <li><a href="#services" className="hover:text-cyan-600 transition-colors">Virtual Guarding</a></li>
-              <li><a href="#services" className="hover:text-cyan-600 transition-colors">Video Patrols</a></li>
+              <li><a href="#services" className="hover:text-cyan-600 transition-colors">Attendance Tracking</a></li>
+              <li><a href="#services" className="hover:text-cyan-600 transition-colors">Register Monitoring</a></li>
+              <li><a href="#services" className="hover:text-cyan-600 transition-colors">Payroll Reports</a></li>
             </ul>
           </div>
 
@@ -42,7 +41,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm text-slate-600">
               <li><a href="#faq" className="hover:text-cyan-600 transition-colors">FAQs</a></li>
               <li><a href="#how-it-works" className="hover:text-cyan-600 transition-colors">How It Works</a></li>
-              <li><a href="#contact" className="hover:text-cyan-600 transition-colors">Book a Demo</a></li>
+              <li><a href="#contact" className="hover:text-cyan-600 transition-colors">Start Tracking</a></li>
             </ul>
           </div>
 

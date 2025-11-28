@@ -3,12 +3,12 @@ import { FaqItem } from '../types';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs: FaqItem[] = [
-  { question: "How do you access our cameras?", answer: "We connect via secure, encrypted channels using your existing CCTV/VMS infrastructure. We do not require public IP exposure for your cameras." },
-  { question: "Do we need new hardware?", answer: "Often no. We integrate with most major NVRs and VMS platforms. Hardware changes are only needed if your current setup is incompatible with remote transmission." },
-  { question: "Are your operators really watching 24/7?", answer: "Yes. Depending on your coverage plan, we have dedicated shifts ensuring eyes are on your screen. We use vigilance detection software to ensure operator alertness." },
-  { question: "What happens when you detect an incident?", answer: "We follow a strict SOP: 1) Verify visually, 2) Issue audio warning (if available), 3) Notify your designated contact, 4) Dispatch authorities if agreed upon." },
-  { question: "How do you protect our data?", answer: "We operate out of a secure facility with restricted access. All connections are encrypted, and we enforce strict NDAs. We generally do not store footage unless it is an incident clip." },
-  { question: "Can you support different time zones?", answer: "Absolutely. Our 24/7 operations center supports clients globally across all time zones." },
+  { question: "How do you ensure no hours are missed?", answer: "Our two-shift system with formal handover ensures full coverage from 5:00 AM to 12:00 AM EST. Operators must account for every entry and exit before ending their shift." },
+  { question: "What if an employee disputes their hours?", answer: "We maintain historical logs and can provide time-stamped visual evidence from the CCTV footage to resolve any discrepancies immediately." },
+  { question: "Do I need special cameras?", answer: "No. As long as your cameras cover the entrance/exit and the register area, and can be accessed remotely, we can work with your existing system." },
+  { question: "How is the data delivered?", answer: "Every Monday, you receive a structured Excel or PDF report via email, broken down by store and employee, ready for your payroll software." },
+  { question: "Can you track break times?", answer: "Yes, if employees leave the premises or have a designated break area visible on camera, we log break start and end times to calculate net working hours." },
+  { question: "How many stores can you handle?", answer: "Our model assigns one operator to up to 5 stores. If you have more, we simply assign a larger pod of operators to your account." },
 ];
 
 const FAQ: React.FC = () => {

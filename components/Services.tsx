@@ -1,6 +1,6 @@
 import React from 'react';
 import { ServiceItem } from '../types';
-import { Eye, ShieldAlert, Video, ClipboardList, Mic2, Users } from 'lucide-react';
+import { Eye, ShieldAlert, Video, ClipboardList, Mic2, Users, Clock, CircleDollarSign, Store } from 'lucide-react';
 
 const services: ServiceItem[] = [
   {
@@ -38,6 +38,24 @@ const services: ServiceItem[] = [
     description: "Scale a dedicated remote security desk without building your own expensive operations center.",
     bullets: ["Trained on your SOPs", "Flexible coverage hours", "Multi-language support"],
     icon: Users
+  },
+  {
+    title: "Employee Attendance Tracking",
+    description: "Visual verification of staff hours using your cameras to ensure accurate billing and reduce time theft.",
+    bullets: ["CCTV-based attendance tracking", "Weekly payroll-ready reports", "Shift adherence logs"],
+    icon: Clock
+  },
+  {
+    title: "POS & Cash Register Monitoring",
+    description: "Close supervision of cash handling areas to prevent internal theft, sweet-hearting, and register errors.",
+    bullets: ["Cash counter monitoring", "Suspicious activity logging", "Transaction verification"],
+    icon: CircleDollarSign
+  },
+  {
+    title: "Multi-Store Audit & Operations",
+    description: "Cost-effective oversight for retail chains, providing historical data for disputes and operational compliance.",
+    bullets: ["One operator covers up to 5 stores", "Historical records for disputes", "Audit-ready archives"],
+    icon: Store
   }
 ];
 

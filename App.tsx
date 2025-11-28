@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import SocialProof from './components/SocialProof';
+import MonitoringShowcase from './components/MonitoringShowcase';
 import Services from './components/Services';
 import Industries from './components/Industries';
 import HowItWorks from './components/HowItWorks';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <SocialProof />
+        <MonitoringShowcase />
         <Services />
         <Industries />
         <HowItWorks />

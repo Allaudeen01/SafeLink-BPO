@@ -3,6 +3,13 @@ import Button from './Button';
 import { Activity, AlertTriangle, Eye, Lock } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const cameraFeeds = [
+    { id: 1, label: 'REG-01', img: 'https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&w=400&q=80', status: 'REC' }, // Cashier
+    { id: 2, label: 'AISLE-04', img: 'https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=400&q=80', status: 'LIVE', alert: true }, // Aisle
+    { id: 3, label: 'ENTRY-N', img: 'https://images.unsplash.com/photo-1601599561213-832382fd0752?auto=format&fit=crop&w=400&q=80', status: 'REC' }, // Retail/Smoke shop vibe
+    { id: 4, label: 'STOCK', img: 'https://images.unsplash.com/photo-1534723452862-4c874018d66d?auto=format&fit=crop&w=400&q=80', status: 'REC' }, // Shelves dark
+  ];
+
   return (
     <section id="home" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
       {/* Background Gradients */}
@@ -71,24 +78,24 @@ const Hero: React.FC = () => {
 
               {/* Camera Grid */}
               <div className="grid grid-cols-2 gap-1 p-1 bg-slate-950">
-                {[1, 2, 3, 4].map((cam) => (
-                  <div key={cam} className="relative aspect-video bg-slate-800 overflow-hidden group">
-                     {/* Simulated Camera Feed Background */}
-                    <div className={`absolute inset-0 opacity-40 bg-[url('https://picsum.photos/seed/cam${cam}/400/300')] bg-cover bg-center grayscale mix-blend-overlay`}></div>
+                {cameraFeeds.map((cam) => (
+                  <div key={cam.id} className="relative aspect-video bg-slate-800 overflow-hidden group">
+                     {/* Camera Feed Background */}
+                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${cam.img}')`, opacity: 0.7 }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                     
                     {/* Camera UI Overlay */}
-                    <div className="absolute top-2 left-2 text-[10px] font-mono text-white/70 bg-black/50 px-1 rounded">CAM-0{cam}</div>
+                    <div className="absolute top-2 left-2 text-[10px] font-mono text-white/90 bg-black/50 px-1 rounded backdrop-blur-sm">{cam.label}</div>
                     <div className="absolute top-2 right-2 text-[10px] font-mono text-green-400 flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span> REC
+                      <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span> {cam.status}
                     </div>
                     
                     {/* Simulated Scan Line */}
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/10 to-transparent h-[10%] w-full animate-scan opacity-30 pointer-events-none"></div>
 
-                    {/* Incident Alert on Cam 2 */}
-                    {cam === 2 && (
-                       <div className="absolute bottom-4 left-4 right-4 bg-red-500/20 backdrop-blur-sm border border-red-500/50 p-2 rounded flex items-center gap-2 animate-pulse">
+                    {/* Incident Alert */}
+                    {cam.alert && (
+                       <div className="absolute bottom-4 left-4 right-4 bg-red-500/30 backdrop-blur-md border border-red-500/50 p-2 rounded flex items-center gap-2 animate-pulse">
                          <AlertTriangle className="w-4 h-4 text-red-500" />
                          <span className="text-xs font-bold text-red-100 uppercase tracking-wider">Motion Detected</span>
                        </div>

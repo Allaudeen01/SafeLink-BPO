@@ -19,13 +19,19 @@ const About: React.FC = () => {
             </div>
             
             {/* CEO Signature Block */}
-            <div className="pt-6 mt-4 border-t border-slate-100 flex items-center gap-4">
-               <div className="h-14 w-14 rounded-full bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center border border-slate-200 text-slate-500 font-bold shadow-sm">
-                 IS
-               </div>
+            <div className="pt-6 mt-4 border-t border-slate-100 flex items-start gap-4">
+               {/* Note: Replace the src below with the actual URL of the CEO's photo */}
+               <img 
+                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" 
+                 alt="Imran Siddiqui" 
+                 className="h-20 w-20 rounded-lg object-cover border border-slate-200 shadow-sm"
+               />
                <div>
                  <div className="text-slate-900 font-bold text-lg">Imran Siddiqui</div>
                  <div className="text-cyan-600 font-medium text-sm">CEO & Founder</div>
+                 <p className="text-xs text-slate-500 mt-1 max-w-[200px]">
+                   "We treat your business like our own."
+                 </p>
                </div>
             </div>
 

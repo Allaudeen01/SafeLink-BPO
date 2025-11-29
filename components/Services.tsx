@@ -11,8 +11,8 @@ const services: ServiceItem[] = [
   },
   {
     title: "Cash Counter & Register Monitoring",
-    description: "Close supervision of point-of-sale areas to prevent internal theft, sweet-hearting, and mishandling of cash.",
-    bullets: ["Transaction verification", "Cash drawer audits", "Customer interaction review"],
+    description: "Strict supervision to prevent register theft. We notify you immediately when employees count money or access the drawer outside of transactions.",
+    bullets: ["Prevent internal theft", "Cash counting notifications", "Transaction verification"],
     icon: CircleDollarSign
   },
   {
